@@ -113,23 +113,6 @@ gym-churn-analysis/
 | `scipy` | `linkage` и `dendrogram` для иерархической кластеризации |
 | `jupyter` | интерактивная среда для ноутбука |
 
-## Как запустить
-
-```bash
-# 1. Клонировать репозиторий
-git clone https://github.com/paushina/gym-churn-analysis.git
-cd gym-churn-analysis
-
-# 2. Создать окружение (Python 3.9–3.11) и установить зависимости
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-# 3. Открыть ноутбук
-jupyter notebook gym_churn_analysis.ipynb
-```
-
-> **О воспроизводимости.** Версия `scikit-learn` закреплена (`1.2.2`) не случайно: в более новых версиях K-Means при том же `random_state=0` может сойтись к другому разбиению, и номера и состав кластеров в описаниях перестанут совпадать с результатами. Метрики случайного леса от версии практически не зависят.
 
 ---
 
